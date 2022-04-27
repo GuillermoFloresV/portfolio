@@ -19,7 +19,7 @@ export default function Footer() {
                     </Link>
                 </div>
                 <div>
-                    <Link href={"mailto:gfloresv.dev"} passHref>
+                    <Link href={"mailto:hello@gfloresv.dev"} passHref>
                         <a><BsFillEnvelopeFill /></a>
                     </Link>
                 </div>
