@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { AiOutlineArrowDown } from "react-icons/ai";
+import ProjectInfoCard from "./projectInfoCard";
 export default function indexContent() {
     return (
         <>
@@ -8,10 +9,11 @@ export default function indexContent() {
                     <h1 className="-skew-y-6 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">Hello there!</h1>
                 </div>
                 <div className="flex justify-left text-2xl font-medium pt-4 pb-4 indent-8">
-                    <h1>I&apos;m currently a Senior studying Computer Science at Cal State University, Monterey Bay.
-                    I am currently interested in Full Stack developer roles, but am open to front end and back end roles as well.
-                    This year, I have started to do Open Source contributions over at <Link href={'https://freecodecamp.org'}>freeCodeCamp!</Link>
-                    <br></br>
+                    <h1>
+                        I&apos;m a new graduate from Cal State University, Monterey Bay with a BS in Computer Science.
+                        Currently interested in Full Stack developer roles, but am open to front end and back end roles as well.
+                        This year, I have started to do Open Source contributions over at <Link href={'https://freecodecamp.org'}>freeCodeCamp!</Link>
+                        <br></br>
                     </h1>
                 </div>
                 <div className="flex justify-left text-2xl font-medium pt-4 pb-4 indent-8">
@@ -30,72 +32,22 @@ export default function indexContent() {
                     </div>
                     <div className="flex justify-left pb-8 pt-8 text-3xl">Recent projects:</div>
                     <div className="flex grid gap-4 grid-cols-2 justify-items-center p-4">
-                        <div className="max-w-sm rounded overflow-hidden shadow-lg text-center">
-                            <div className="px-6 py-4">
-                                <div className="font-bold text-xl mb-2">freeCodeCamp Classroom</div>
-                                <p className="text-gray-700 text-base">
-                                    A self-hosted solution to help teachers plan and manage classroom-based learning, on top of freeCodeCamp&apos;s learn platform.
-                                </p>
-                            </div>
-                            <div className="px-6 pt-4 pb-2">
-                                <a>
-                                    <Link href={'https://github.com/freecodecamp/classroom'} passHref>
-                                        <button className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Github Repo</button>
-                                    </Link>
-                                </a>
-                                <button className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 cursor-not-allowed" disabled>Live Demo</button>
-                            </div>
-                        </div>
-                        <div className="max-w-sm rounded overflow-hidden shadow-lg text-center">
-                            <div className="px-6 py-4">
-                                <div className="font-bold text-xl mb-2">Portfolio</div>
-                                <p className="text-gray-700 text-base">
-                                    A one-stop-shop to view my projects, resume, and find ways to contact me. 
-                                </p>
-                            </div>
-                            <div className="px-6 pt-4 pb-2">
-                                <a>
-                                    <Link href={'https://github.com/GuillermoFloresV/portfolio'} passHref>
-                                        <button className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Github Repo</button>
-                                    </Link>
-                                </a>
-                            </div>
-                        </div>
+                        <ProjectInfoCard 
+                            projectName="freeCodeCamp Classroom"
+                            projectDescription="A self-hosted solution to help teachers plan and manage classroom-based learning, on top of freeCodeCamp&apos;s learn platform.                            "
+                            githubLink="https://github.com/freecodecamp/classroom"
+                            liveDemo={null}
+
+                        />
+                        <ProjectInfoCard
+                            projectName="My Portfolio"
+                            projectDescription="A one-stop-shop to view my projects, resume, and find ways to contact me. "
+                            githubLink="https://github.com/GuillermoFloresV/portfolio"
+                            liveDemo="https://gfloresv.dev"
+                        />
                     </div>
                 </div>                    
                 <div id="highlightedProjects" className="flex grid gap-4 grid-cols-2 justify-items-center p-4 hidden">
-                    <div className="max-w-sm rounded overflow-hidden shadow-lg text-center">
-                        <div className="px-6 py-4">
-                            <div className="font-bold text-xl mb-2">freeCodeCamp Classroom</div>
-                            <p className="text-gray-700 text-base">
-                                A self-hosted solution to help teachers plan and manage classroom-based learning, on top of freeCodeCamp&apos;s learn platform.
-                            </p>
-                        </div>
-                        <div className="px-6 pt-4 pb-2">
-                            <a>
-                                <Link href={'https://github.com/freecodecamp/classroom'} passHref>
-                                    <button className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Github Repo</button>
-                                </Link>
-                            </a>
-                            <button className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 cursor-not-allowed" disabled>Live Demo (Coming Soon!)</button>
-                        </div>
-                    </div>
-                    <div className="max-w-sm rounded overflow-hidden shadow-lg text-center">
-                        <div className="px-6 py-4">
-                            <div className="font-bold text-xl mb-2">Portfolio</div>
-                            <p className="text-gray-700 text-base">
-                                A one-stop-shop to view my projects, resume, and find ways to contact me. 
-                            </p>
-                        </div>
-                        <div className="px-6 pt-4 pb-2">
-                            <a>
-                                <Link href={'https://github.com/GuillermoFloresV/portfolio'} passHref>
-                                    <button className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Github Repo</button>
-                                </Link>
-                            </a>
-                            <button className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 cursor-not-allowed" disabled>You&apos;re already here :)</button>
-                        </div>
-                    </div>
                 </div>
             </div>
         </>
