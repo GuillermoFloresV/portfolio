@@ -12,7 +12,7 @@ export default function Home() {
         </Head>
         <Navbar></Navbar>
         <div className='min-h-screen w-full overflow-auto p-8'>
-            <div className="flex justify-left text-5xl font-medium pt-16 pb-4 indent-8 text-white">
+            <div className="flex justify-left text-xl font-medium pt-16 pb-4 indent-8 text-white sm:text-5xl">
                 <p>
                     My name is Guillermo Flores V and I am a full-stack engineer. I hold a BS in Computer Science (concentration in Software Engineering) from California State University, Monterey Bay.
                 </p>
