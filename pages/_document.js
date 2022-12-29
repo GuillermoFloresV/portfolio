@@ -16,6 +16,9 @@ import Document, {
       return (
         <Html>
           <Head>
+            <Html lang='en'></Html>
+            <meta name="description" content="Guillermo Flores V Portfolio" />
+            <link rel="icon" href="/favicon.ico" />
             <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
           </Head>
           <body>
