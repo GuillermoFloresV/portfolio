@@ -28,7 +28,7 @@ export default function Home() {
                     <Image src={'/fcc_primary_small.png'} alt={"Logo of free code camp"} height={300} width={400}></Image>
                 </div>
                 <div className='col-span-2 pr-8 text-white text-3xl'>
-                    Currently, I am a volunteer contributor @ freeComdeCamp. I am working on the Classroom Mode project as a fullstack developer and have been working on it since January 2022.
+                    Currently, I am a volunteer contributor @ freeCodeCamp. I am working on the Classroom Mode project as a fullstack developer and have been working on it since January 2022.
                     The project introduced me to NextJS, the framework this website is currently using! 
                 </div>
                 <div className='p-16'>
