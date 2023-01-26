@@ -2,6 +2,7 @@ import Footer from "../../../components/footer";
 import Navbar from "../../../components/navbar";
 import { BsInfoCircle } from "react-icons/bs";
 import {useEffect, useState} from 'react';
+import Head from "next/head";
 
 export async function getServerSideProps() {
     const issAPIData = await fetch("https://api.wheretheiss.at/v1/satellites/25544");
@@ -43,17 +44,20 @@ export default function Home(props) {
     }, []);
   return (
     <div className="bg-black overflow-x-auto h-screen">
+        <Head>
+            <title>How far is the ISS?</title>
+        </Head>
         <Navbar></Navbar>
-        <div className="text-white text-8xl flex justify-center">
+        <div className="text-white text-5xl flex justify-center">
             How far am I from the ISS?
         </div>
-        <div id="about" className="text-white text-5xl flex justify-center">
+        <div id="about" className="text-white text-3xl flex justify-center">
             This mini-project aims to be able to have an interactive webpage to get the distance between you and the International Space Station (ISS).
         </div>
-        <div id="user-location" className="text-white text-3xl flex justify-center p-8">
+        <div id="user-location" className="text-white text-xl flex justify-center p-8">
             {location == null ? "Please allow location access to see this project work." : "Your location in latitude, longitude: "+ location}
         </div>
-        <div id="iss-location" className="text-white text-3xl flex justify-center p-8">
+        <div id="iss-location" className="text-white text-xl flex justify-center p-8">
             {"The ISS is currently at this location in latitude, longitude: "+ props.issData.latitude + "," + props.issData.longitude}
         </div>
         <div className="flex justify-center p-8">
