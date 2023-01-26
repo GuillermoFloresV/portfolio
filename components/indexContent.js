@@ -41,6 +41,14 @@ export default function indexContent() {
                                 liveDemo="https://gfloresv.dev"
                             />
                         </div>
+                        <div>
+                            <ProjectInfoCard
+                                projectName="How far am I from the ISS?"
+                                projectDescription="Ever wondered how far away the ISS is from your current location? Find out using this neat tool!"
+                                githubLink=""
+                                liveDemo="https://gfloresv.dev/projects/iss"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
