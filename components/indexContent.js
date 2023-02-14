@@ -45,7 +45,7 @@ export default function indexContent() {
                             <ProjectInfoCard
                                 projectName="How far am I from the ISS?"
                                 projectDescription="Ever wondered how far away the ISS is from your current location? Find out using this neat tool!"
-                                githubLink=""
+                                githubLink="https://github.com/GuillermoFloresV/portfolio/pull/5/files"
                                 liveDemo="https://gfloresv.dev/projects/iss"
                             />
                         </div>
