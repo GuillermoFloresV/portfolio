@@ -7,11 +7,11 @@ import Link from "next/link";
 import Image from "next/image";
 
 export async function getServerSideProps() {
-    //const issAPIData = await fetch("https://api.wheretheiss.at/v1/satellites/25544");
-    //const data = await issAPIData.json()
+    const issAPIData = await fetch("https://api.wheretheiss.at/v1/satellites/25544");
+    const data = await issAPIData.json()
     return {
         props : {
-            issData: [-46.201390573152,-6.1903589302567]
+            issData: data
         },
     }
 }
