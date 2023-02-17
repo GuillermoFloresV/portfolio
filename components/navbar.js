@@ -22,7 +22,7 @@ export default function Navbar() {
                     </div>
                     <div className="pl-4 float-right">
                         <Link href={"/"} passHref>
-                            <a><AiOutlineHome></AiOutlineHome></a>
+                            <AiOutlineHome></AiOutlineHome>
                         </Link>
                     </div>
                 </div>

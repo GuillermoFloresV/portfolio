@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const { fontFamily } = require('tailwindcss/defaultTheme')
 
 module.exports = {
   content: [
@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'Quicksand': ['Quicksand', ...defaultTheme.fontFamily.sans],
+        sans: ['var(--font-quicksand)', ...fontFamily.sans]
       }, 
       'animation': {
         text: "text 5s ease infinite",

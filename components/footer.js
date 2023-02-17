@@ -11,17 +11,17 @@ export default function Footer() {
                 <div className="flex-1 justify-end">
                     <div className="pl-12 float-right sm:text-2xl text-md">
                         <Link href={"https://github.com/GuillermoFloresV"} passHref>
-                            <a><BsGithub /></a>
+                            <BsGithub />
                         </Link>
                     </div>
                     <div className="pl-12 float-right sm:text-2xl text-md">
                         <Link href={"https://linkedin.com/in/~guillermo"} passHref>
-                            <a><BsLinkedin /></a>
+                            <BsLinkedin />
                         </Link>
                     </div>
                     <div className="pl-12 float-right sm:text-2xl text-md">
                         <Link href={"mailto:hello@gfloresv.dev"} passHref>
-                            <a><BsFillEnvelopeFill /></a>
+                            <BsFillEnvelopeFill />
                         </Link>
                     </div>
                 </div>
