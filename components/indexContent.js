@@ -17,7 +17,7 @@ export default function indexContent() {
                     </div>
                     <div className="text-white text-4xl animate-bounce pt-8">
                         <Link href={'#highlightedProjects'} passHref>
-                            <a><AiOutlineArrowDown></AiOutlineArrowDown></a>
+                            <AiOutlineArrowDown></AiOutlineArrowDown>
                         </Link>
                     </div>
                 </div>

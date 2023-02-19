@@ -8,11 +8,9 @@ export default function ProjectInfoCard(props){
                     <p className="text-base text-white">{props.projectDescription}</p>
                 </div>
                 <div className="px-6 pt-4 pb-2">
-                    <a>
-                        <Link href={props.githubLink} passHref>
-                            <button className="inline-block bg-blue-500 hover:bg-blue-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-100 mr-2 mb-2">Github Repo</button>
-                        </Link>
-                    </a>
+                    <Link href={props.githubLink} passHref>
+                        <button className="inline-block bg-blue-500 hover:bg-blue-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-100 mr-2 mb-2">Github Repo</button>
+                    </Link>
                     {props.liveDemo ?  
                         <Link href={props.liveDemo} passHref>
                             <button className="inline-block bg-blue-500 hover:bg-blue-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-100 mr-2 mb-2">Live Demo</button> 
