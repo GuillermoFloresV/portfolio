@@ -1,8 +1,7 @@
-import Link from "next/link"
-import parseActivityData from "../github_activity_parser"
+import GitHubActivityBuilder from "./github_activity_builder"
 
 export default function GithubActivity(activity) {
     return (
-        parseActivityData(activity)
+        GitHubActivityBuilder(activity)
     )
 }

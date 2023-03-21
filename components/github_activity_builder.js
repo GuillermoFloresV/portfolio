@@ -1,5 +1,5 @@
 import Link from "next/link";
-export default function parseActivityData(activity) {
+export default function GitHubActivityBuilder(activity) {
     let activityObj = activity['activity'];
     //TODO: Attempt to make this code a little cleaner. Currently I am just conditionally rendering and that works fine but maybe I could do something other than that
     return (
