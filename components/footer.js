@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { BsLinkedin, BsGithub, BsFillEnvelopeFill } from "react-icons/bs";
 export default function Footer() {
     return (
-        <div className='w-full'>
+        <div className='bg-black w-full'>
             <div className='flex justify-center'>
                 <hr className='w-3/4'></hr>
             </div>
