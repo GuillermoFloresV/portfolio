@@ -4,7 +4,7 @@ export default function GitHubActivityBuilder(activity) {
     //TODO: Attempt to make this code a little cleaner. Currently I am just conditionally rendering and that works fine but maybe I could do something other than that
     return (
         <>
-            <div className="rounded-lg border-2 border-[#000000] shadow-md shadow-[#000000] bg-black m-6 p-4 flex-1 h-[250px] w-[250px] lg:w-[500px] overflow-auto">
+            <div className="rounded-lg border-2 border-[#000000] shadow-md shadow-[#000000] bg-black m-6 p-4 flex-1 h-[250px] w-[250px] lg:w-[500px] overflow-auto relative">
                 <div className="text-white text-xl">{"I "+eventTranslator[activityObj.type]}</div>
                 <ul>
                     <li>
@@ -30,7 +30,7 @@ export default function GitHubActivityBuilder(activity) {
                     <li>
                         {activityObj.payload.pull_request ? 
                             <div className="sm:text-lg text-sm">
-                                <Link className="underline" href={'https://github.com/'+activityObj.repo.name+'/commit/'+activityObj.payload.pull_request.html_url}>Link to PR</Link>
+                                <Link className="underline" href={activityObj.payload.pull_request.html_url}>Link to PR</Link>
                             </div> : null
                         }
                     </li>
@@ -45,7 +45,7 @@ export default function GitHubActivityBuilder(activity) {
                     </li>
                 </ul>
                 {activityObj.created_at ?  
-                    <div className="text-sm float-right pb-1 bottom-0">
+                    <div className="text-sm right-0 pt-2 pb-2 bottom-0 relative">
                         {"Occured on: " + new Date(activityObj.created_at).toLocaleString()}
                     </div> : null
                 }
