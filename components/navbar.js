@@ -4,7 +4,7 @@ import { AiOutlineHome } from "react-icons/ai";
 export default function Navbar() {
     return (
         <div className='w-full'>
-            <div id="top" className="bg-black text-gray-100 flex justify-between items-center w-full p-4 ">
+            <div id="top" className="bg-transparent text-gray-100 flex justify-between items-center w-full p-4 ">
                 <div className='flex-1'>
                     <p className="font-bold">Guillermo Flores V</p>
                     <hr></hr>

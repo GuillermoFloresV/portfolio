@@ -2,7 +2,7 @@ import Link from "next/link";
 export default function ProjectInfoCard(props){
     return (
         <>
-            <div className="sm:max-w-sm bg-neutral-900 rounded shadow-lg text-center">
+            <div className="m-6 p-4 flex-1 h-[250px] w-[250px] lg:w-[500px] overflow-auto relative bg-neutral-900 rounded shadow-lg text-center">
                 <div className="px-6 py-4">
                     <div className="font-bold text-white text-xl mb-2">{props.projectName}</div>
                     <p className="text-base text-white">{props.projectDescription}</p>

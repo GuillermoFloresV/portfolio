@@ -4,7 +4,7 @@ export default function GitHubActivityBuilder(activity) {
     //TODO: Attempt to make this code a little cleaner. Currently I am just conditionally rendering and that works fine but maybe I could do something other than that
     return (
         <>
-            <div className="rounded-lg border-2 border-[#000000] shadow-md shadow-[#000000] bg-black m-6 p-4 flex-1 h-[250px] w-[250px] lg:w-[500px] overflow-auto relative">
+            <div className="rounded-lg bg-neutral-900 m-6 p-4 flex-1 h-[250px] w-[250px] lg:w-[500px] overflow-auto relative">
                 <div className="text-white text-xl">{"I "+eventTranslator[activityObj.type]}</div>
                 <ul>
                     <li>
@@ -36,10 +36,10 @@ export default function GitHubActivityBuilder(activity) {
                     </li>
                     <li>
                         {activityObj.type == 'CreateEvent' ? 
-                            <div className="sm:text-lg text-sm underline">
-                                I created the {activityObj.payload.ref_type} named {activityObj.payload.ref} in <Link href={'https://github.com/'+activityObj.repo.name}>{activityObj.repo.name}</Link>
+                            <div className="sm:text-lg text-sm">
+                                I created a {activityObj.payload.ref_type} named {activityObj.payload.ref} in <div className="underline"><Link href={'https://github.com/'+activityObj.repo.name}>{activityObj.repo.name}</Link></div>
                             </div> : activityObj.type == 'DeleteEvent' ? <div className="sm:text-lg text-sm underline">
-                                I deleted the {activityObj.payload.ref_type} named {activityObj.payload.ref} in <Link href={'https://github.com/'+activityObj.repo.name}>{activityObj.repo.name}</Link>
+                                I deleted a {activityObj.payload.ref_type} named {activityObj.payload.ref} in <div className="underline"><Link href={'https://github.com/'+activityObj.repo.name}>{activityObj.repo.name}</Link></div>
                             </div> : null
                     }
                     </li>

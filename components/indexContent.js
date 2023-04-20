@@ -28,9 +28,9 @@ export default function indexContent(props) {
             <div className="bg-black m-0">
                 <Wave color="#9333ea"></Wave>
             </div>
-            <div className="bg-purple-600 flex flex-col items-center sm:h-screen h-fit w-full pb-12">
+            <div className="bg-purple-600 flex flex-col items-center sm:h-screen h-fit w-full pt-12">
                 <div id="highlightedProjects" className="sm:text-6xl text-2xl text-white">Recent Projects</div>
-                <div className="pt-12 flex grid gap-48 justify-center grid-cols-1 justify-items-center sm:grid-cols-2">
+                <div className="flex grid w-full h-fit justify-center grid-cols-1 justify-items-center sm:grid-cols-2">
                     <div>
                         <ProjectInfoCard 
                             projectName="freeCodeCamp Classroom"
@@ -63,7 +63,7 @@ export default function indexContent(props) {
             </div>
             <div className="bg-blue-700 text-white sm:text-6xl text-xl flex flex-col content-center pt-12 items-center h-fit w-full">
                 <div className="flex sm:text-6xl text-2xl text-white">Recent Github Activity</div>
-                <div id="github_activity" className="w-full h-fit flex grid sm:grid-cols-2 grid cols-1 justify-center justify-items-center">
+                <div id="githubActivity" className="w-full h-fit flex grid sm:grid-cols-2 grid cols-1 justify-center justify-items-center">
                     {props.activities.map(activity => 
                         <div key={activity.id} className="text-white text-4xl">
                             <GithubActivity activity={activity}></GithubActivity>  

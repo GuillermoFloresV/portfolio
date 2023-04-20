@@ -13,7 +13,7 @@ export async function getServerSideProps() {
 
 export default function Home(props) {
   return (
-    <div className="bg-transparent overflow-hidden">
+    <div className="bg-black overflow-hidden">
       <Head>
         <title>Guillermo&apos;s Portfolio</title>
       </Head>
